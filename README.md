@@ -2,87 +2,87 @@ codestyling-localization-translation
 ====================================
 
 === Codestyling Localization Translation ===
-Contributors: OITF, OpenInformationTechnology, codestyling
-Tags: gettext, language, translation, poedit, localization, plugin, wpmu, buddypress, bbpress, themes, translator, l10n, i18n, google-translate, microsoft-translate, yandex-translate, apertium-translate, compatibility, mo, po, po-mo, polyglot
-Requires at least: 2.5
-Tested up to: 3.9
-Stable tag: 2.00
+* Contributors: OITF, OpenInformationTechnology, codestyling
+* Tags: gettext, language, translation, poedit, localization, plugin, wpmu, buddypress, bbpress, themes, translator, l10n, i18n, google-translate, microsoft-translate, yandex-translate, apertium-translate, compatibility, mo, po, po-mo, polyglot
+* Requires at least: 2.5
+* Tested up to: 3.9
+* Stable tag: 2.00
 
 You can manage and edit all gettext translation files (*.po/*.mo) directly out of WordPress Admin Center without any need of an external editor.
 
 == Description ==
-
-You can manage and edit all gettext translation files (*.po/*.mo) directly out of your WordPress Admin Center without any need of an external editor.
-It automatically detects the gettext ready components like **WordPress** itself or any **Plugin** / **Theme** supporting gettext, is able to scan the related source files and can assists you using **Google Translate API** or **Microsoft Translator API** during translation.
-This plugin supports **WordPress MU** and allows explicit **WPMU Plugin** translation too. It newly introduces ignore-case and regular expression search during translation.
-**BuddyPress** and **bbPress** as part of BuddyPress can be translated too. Produces transalation files are 100% compatible to **PoEdit**.
+* You can manage and edit all gettext translation files (*.po/*.mo) directly out of your WordPress Admin Center without any need of an external editor.
+* It automatically detects the gettext ready components like **WordPress** itself or any **Plugin** / **Theme** supporting gettext, is able to scan the related source files and can assists you using **Google Translate API** or **Microsoft Translator API** during translation.
+* This plugin supports **WordPress MU** and allows explicit **WPMU Plugin** translation too. It newly introduces ignore-case and regular expression search during translation.
+* **BuddyPress** and **bbPress** as part of BuddyPress can be translated too. Produces transalation files are 100% compatible to **PoEdit**.
 
 = Requirements =
-1. WordPress version 2.5 and later
-1. PHP Interpreter version 4.4.2 or later
-1. PHP Tokenizer Module (normally standard, required since version 1.90)
-1. PHP Curl Library (if Microsoft translation API services should be used)
+* WordPress version 2.5 and later
+* PHP Interpreter version 4.4.2 or later
+* PHP Tokenizer Module (normally standard, required since version 1.90)
+* PHP Curl Library (if Microsoft translation API services should be used)
 
 Please visit [the official website](http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en "Codestyling Localization") for further details and the latest information on this plugin.
 
 = Details =
-1. automatic detection of gettext ready components like WordPress, Plugins or Themes
-1. creation of new language translation files at choosen language (ensures correct plural definitions too)
-1. inplace adjusting of *.mo/*.po file permissions to be able to tranlate it
-1. component specific (re)scan of source file to build the updated catalog entries
-1. wrapping multiple plugins using same textdomain into one translation unit (like plugin and it's widget(s))
-1. extended editing of full gettext catalog assisted by using Google or Microsoft translate API
-1. full catalog search (exact match) with instant result set view for source or target language
-1. correct handling of language dependend plural forms by providing appropriated edit dialog
-1. first support of WMPU plugins started at version 1.60
-1. complete WordPress support related to multiple textdomains included (since WP 2.8 and higher)
-1. complete support of developer code comments for translators
-1. complete support of context based gettext functions and displays this at editor qualified
-1. supports also translation of non gettexted code parts, that marked as to be replaced in PHP files directly
-1. handles textdomain separation for each module (WP, Plugins, Themes) to avoid standard textdomain usage been part of *.mo file
-1. support of Theme language file sub folder (introduced at WordPress version 2.7 and higher)
-1. support of BuddyPress and also bbPress as integration part of BuddyPress
-1. support of *.pot file content during new language file creation
-1. support of encrypted premium plugins but with security risk warning
-1. support of low memory conditions (32M memory_limit) with big translation files or source codes
-1. support of IDN based installations if PHP version is 5.0 or higher
+* automatic detection of gettext ready components like WordPress, Plugins or Themes
+* creation of new language translation files at choosen language (ensures correct plural definitions too)
+* inplace adjusting of *.mo/*.po file permissions to be able to tranlate it
+* component specific (re)scan of source file to build the updated catalog entries
+* wrapping multiple plugins using same textdomain into one translation unit (like plugin and it's widget(s))
+* extended editing of full gettext catalog assisted by using Google or Microsoft translate API
+* full catalog search (exact match) with instant result set view for source or target language
+* correct handling of language dependend plural forms by providing appropriated edit dialog
+* first support of WMPU plugins started at version 1.60
+* complete WordPress support related to multiple textdomains included (since WP 2.8 and higher)
+* complete support of developer code comments for translators
+* complete support of context based gettext functions and displays this at editor qualified
+* supports also translation of non gettexted code parts, that marked as to be replaced in PHP files directly
+* handles textdomain separation for each module (WP, Plugins, Themes) to avoid standard textdomain usage been part of *.mo file
+* support of Theme language file sub folder (introduced at WordPress version 2.7 and higher)
+* support of BuddyPress and also bbPress as integration part of BuddyPress
+* support of *.pot file content during new language file creation
+* support of encrypted premium plugins but with security risk warning
+* support of low memory conditions (32M memory_limit) with big translation files or source codes
+* support of IDN based installations if PHP version is 5.0 or higher
 
 = Scripting Guard =
-This plugin work with a world unique technology to protect it's proper function against malfunction 3rd party plugins or bad behavior themes (see screenshot section).
-Often Authors are attaching javascripts at global space regardless if they damage other plugins backend pages. This plugin detects now any kind of unrelated javascripts that have been attached to it's pages but are bad behavior.
-In such cases this scripts will be stipped and a warning message occures. Furthermore the protection also detects runtime exceptions of injected inline scripts and displays them too.
+* This plugin work with a world unique technology to protect it's proper function against malfunction 3rd party plugins or bad behavior themes (see screenshot section).
+* Often Authors are attaching javascripts at global space regardless if they damage other plugins backend pages. This plugin detects now any kind of unrelated javascripts that have been attached to it's pages but are bad behavior.
+* In such cases this scripts will be stipped and a warning message occures. Furthermore the protection also detects runtime exceptions of injected inline scripts and displays them too.
 
 = Announcement =
-Starting with version 3.4 of WordPress I faced a restructured handling of localization within the Core Files, can be read here: [Important Changes for WordPress 3.4](http://wppolyglots.wordpress.com/important-changes-for-wordpress-3-4/)
-Because I had to cope with this, the translation process of WordPress itself has been rewritten. The pugin now supports backward compatibility (for older WordPress versions) and also generates two new structured *.mo files.
-It depends on your installed version, if it's less than 3.4-alpha, than you will get the old files generated otherwise the new files.
+* Starting with version 3.4 of WordPress I faced a restructured handling of localization within the Core Files, can be read here: [Important Changes for WordPress 3.4](http://wppolyglots.wordpress.com/important-changes-for-wordpress-3-4/)
+* Because I had to cope with this, the translation process of WordPress itself has been rewritten. The pugin now supports backward compatibility (for older WordPress versions) and also generates two new structured *.mo files.
+* It depends on your installed version, if it's less than 3.4-alpha, than you will get the old files generated otherwise the new files.
 
 = Support & Development =
-The plugin stays for a long time at major version 1.x now and it was planned to come up with a new major release 2.x several month ago. But because of massive changes at the WordPress core, not having that much time I would need, the new major version will be delayed again.
-I can't estimate currently a timeframe for availability. That's why I continue maintainance of version 1.x as long as I'm working on version 2.x at alpha stage in parallel.
+* The plugin stays for a long time at major version 1.x now and it was planned to come up with a new major release 2.x several month ago. But because of massive changes at the WordPress core, not having that much time I would need, the new major version will be delayed again.
+* I can't estimate currently a timeframe for availability. That's why I continue maintainance of version 1.x as long as I'm working on version 2.x at alpha stage in parallel.
 
 = Translation API's & User Interface =
-Introduced with version 1.99.17 of this plugin, the translation API's of Google and Microsoft have been integrated. Both require at least subscriptions and the Google API is a paid service.
-The plugin knows, which API is able to translated what language, so you will find the information next to your language file to be translated at the list.
-I did reshape the User Interface a bit more closer to WordPress Standard UI, so it should be more intuitive to use it from now on.
+* Introduced with version 1.99.17 of this plugin, the translation API's of Google and Microsoft have been integrated. Both require at least subscriptions and the Google API is a paid service.
+* The plugin knows, which API is able to translated what language, so you will find the information next to your language file to be translated at the list.
+* I did reshape the User Interface a bit more closer to WordPress Standard UI, so it should be more intuitive to use it from now on.
 
 = Translations =
-The german translation has been created with this plugin itself. Feel free to make your translation related to your native language.
-If you have a ready to publish translation of this plugin not pre-packaged yet, please send me an email. I will extend the package and remark your work at Acknowledgements.
+* The german translation has been created with this plugin itself. Feel free to make your translation related to your native language.
+* If you have a ready to publish translation of this plugin not pre-packaged yet, please send me an email. I will extend the package and remark your work at Acknowledgements.
 
 
 == Installation ==
-
-1. Uncompress the download package
-1. Upload folder including all files and sub directories to the `/wp-content/plugins/` directory.
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Translate your resources using 'Manage' menu at new 'Localization' sub menu
+* Uncompress the download package
+* Upload folder including all files and sub directories to the `/wp-content/plugins/` directory.
+* Activate the plugin through the 'Plugins' menu in WordPress
+* Translate your resources using 'Manage' menu at new 'Localization' sub menu
 
 = Activation of Translation API's =
 
 You can use 4 translation API's with this plugin. Normally they are disabled at default installation. You will find inside the plugin main page a link that expands the required description how to work with API's.
 
-== Changelog ==
+
+Changelog
+====================================
 
 = Version 2.00 =
 * Feature: added WPMU Content Translation (Menus, Categories, Posts, Pages, Comments, Tags)
@@ -501,30 +501,36 @@ You can use 4 translation API's with this plugin. Normally they are disabled at 
 * start of coding (alpha) @ 2008-06-21
 
 
-== Frequently Asked Questions ==
+Frequently Asked Questions
+====================================
 
 = History? =
+
 Please visit [the official website](http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en "Codestyling Localization") for the latest information on this plugin.
 
 = Where can I get more information? =
+
 Please visit [the official website](http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en "Codestyling Localization") for the latest information on this plugin.
 
 == Screenshots ==
-1. Codestyling Localization management center (menu -> tools)
-1. language creation dialog
-1. rescan of components based on actual source files
-1. catalog content overview and editing center
-1. simple gettext content editor dialog
-1. plural gettext content editor dialog 
-1. non gettext code hints for translators (source file patches)
-1. separate multiple textdomains during mo-file generation
-1. BuddyPress and bbPress will be special supported
-1. texts with trailing space detection and visualization
-1. Scripting Guard - plugin self protection feature
+* Codestyling Localization management center (menu -> tools)
+* language creation dialog
+* rescan of components based on actual source files
+* catalog content overview and editing center
+* simple gettext content editor dialog
+* plural gettext content editor dialog 
+* non gettext code hints for translators (source file patches)
+* separate multiple textdomains during mo-file generation
+* BuddyPress and bbPress will be special supported
+* texts with trailing space detection and visualization
+* Scripting Guard - plugin self protection feature
 
 
-== Other Notes ==
+Other Notes
+====================================
+
 = Acknowledgements =
+
 Thanks to [Frank Bueltge](http://bueltge.de/ "Frank Bueltge") , Ingo Henze and  [Alphawolf](http://www.schloebe.de/ "Alphawolf") for qualified beta testing and improvement comments and [Knut Sparhell](http://sparhell.no/knut/ "Knut Sparhell") who detects the 'short_open_tag = off' Bug contained.
 
 Also many thanks for all that qualified translations:
@@ -540,10 +546,17 @@ Also many thanks for all that qualified translations:
 
 Thanks to [Thomas Urban](http://www.toxa.de "Thomas Urban") for contributing a faster mo file reading implementation.
 
-= Licence =
+
+Licence
+====================================
+
 This plugins is released under the GPLv3, you can use it free of charge on your personal or commercial blog. 
 
-= Translations =
+
+Translations
+====================================
+
 The german translation has been created with this plugin itself. Feel free to make your translation related to your native language.
-If you have a ready to publish translation of this plugin not pre-packaged yet, please send me an email. I will extend the package and remark your work at Acknowledgements.
+
+If you have a ready to publish translation of this plugin not pre-packaged yet, please send me an https://github.com/OpenInformationTechnology/codestyling-localization-translation/issues. I will extend the package and remark your work at Acknowledgements.
 
