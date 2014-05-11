@@ -112,9 +112,10 @@ class CspTranslationFile {
 			'nplurals=2; plural=n != 1;'																			=> array('af','be','bg','ca','da','de','el','en','es','et','eo','eu','fi','fo','fy','he','id','in','is','it','kk','ky','lb','nk','nb','nl','no','pt','ro','sr','sv','th','tl','vi','xh','zu'),
 			'nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;' 												=> array('sk'),
 			'nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;' 										=> array('lv'),
-			'nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;' 								=> array('cs', 'hr', 'ru', 'uk'),
+			'nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;' 								=> array('cs', 'hr', 'uk'),
 			'nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;' 					=> array('pl'),
 			'nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2;'				=> array('lt'),
+			'nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;'				=> array('ru'),
 			'nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;' 						=> array('sl'),
 			'nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4;'										=> array('ga'),
 			'nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;' 	=> array('ar')
