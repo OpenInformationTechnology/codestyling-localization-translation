@@ -3156,6 +3156,26 @@ define('MICROSOFT_TRANSLATE_CLIENT_SECRET', 'enter your secret here');
 <li>
 	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'themes') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=themes"><?php _e('Themes', CSP_PO_TEXTDOMAIN); ?>
 	</a> | </li>
+<?php if (csp_is_multisite()) { ?>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'menus') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=menus"><?php _e('Menus'); ?>
+	</a> | </li>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'cats') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=cats"><?php _e('Categories'); ?>
+	</a> | </li>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'posts') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=posts"><?php _e('Posts'); ?>
+	</a> | </li>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'pages') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=pages"><?php _e('Pages'); ?>
+	</a> | </li>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'comms') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=comms"><?php _e('Comments'); ?>
+	</a> | </li>
+<li>
+	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'tags') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=tags"><?php _e('Tags'); ?>
+	</a> | </li>
+<?php } ?>
 <li>
 	<a<?php if(isset($_GET['type']) && $_GET['type'] == 'compat') echo " class=\"current\""; ?> href="<?php echo $csp_wp_main_page ?>.php?page=codestyling-localization/codestyling-localization.php&amp;type=compat"><?php _e('Compatibility', CSP_PO_TEXTDOMAIN); ?>
 	</a> | </li>
