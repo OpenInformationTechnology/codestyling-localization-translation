@@ -11,7 +11,7 @@ Domain Path: /languages
 
 
  License:
- ========================================================csp_po_get_wordpress_capabilities======================
+ ==============================================================================
  Copyright 2014 Vladimir Bulanov  (email : energy@energy.im)
 
  This program is free software; you can redistribute it and/or modify
@@ -1691,7 +1691,8 @@ function csp_po_ajax_handle_scan_source_file() {
 	}		
 	$pofile = new CspFileSystem_TranslationFile($_POST['type']);
 	if ($pofile->read_pofile($_POST['pofile'])) {
-		if ((int)$_POST['num'] == 0) { 
+		global $wp_version;			
+		if (version_compare($wp_version, '3.4-alpha', "<") && ((int)$_POST['num'] == 0)) { 
 		
 			if (!$pofile->supports_textdomain_extension() && $_POST['type'] == 'wordpress'){
 				//try to merge up first all splitted translations.
@@ -1700,11 +1701,8 @@ function csp_po_ajax_handle_scan_source_file() {
 				//load existing files for backward compatibility if existing
 				$pofile->read_pofile($part.'continents-cities-'.$root, $csp_l10n_plurals, $part.'continents-cities-'.$root);
 				$pofile->read_pofile($part.'ms-'.$root, $csp_l10n_plurals, $part.'ms-'.$root);
-				global $wp_version;			
-				if (version_compare($wp_version, '3.4-alpha', ">=")) {
-					$pofile->read_pofile($part.'admin-'.$root, $csp_l10n_plurals, $part.'admin-'.$root);
-					$pofile->read_pofile($part.'admin-network-'.$root, $csp_l10n_plurals, $part.'admin-network-'.$root);
-				}
+				$pofile->read_pofile($part.'admin-'.$root, $csp_l10n_plurals, $part.'admin-'.$root);
+				$pofile->read_pofile($part.'admin-network-'.$root, $csp_l10n_plurals, $part.'admin-network-'.$root);
 				//again read it to get the right header overwritten last
 				$pofile->read_pofile($_POST['pofile']);
 				//overwrite with full imploded sparse file contents now
@@ -1804,18 +1802,16 @@ function csp_po_ajax_handle_launch_editor() {
 	}
 	$f = new CspFileSystem_TranslationFile($_POST['type']);
 	$f->read_pofile($_POST['basepath'].$_POST['file'], $csp_l10n_plurals, $_POST['file']);
-	if (!$f->supports_textdomain_extension() && $_POST['type'] == 'wordpress'){
+	global $wp_version;			
+	if (version_compare($wp_version, '3.4-alpha', "<") && (!$f->supports_textdomain_extension() && $_POST['type'] == 'wordpress')) {
 		//try to merge up first all splitted translations.
 		$root = basename($_POST['file']);
 		$part = str_replace($root, '', $_POST['file']);
 		//load existing files for backward compatibility if existing
 		$f->read_pofile($_POST['basepath'].$part.'continents-cities-'.$root, $csp_l10n_plurals, $part.'continents-cities-'.$root);
 		$f->read_pofile($_POST['basepath'].$part.'ms-'.$root, $csp_l10n_plurals, $part.'ms-'.$root);
-		global $wp_version;			
-		if (version_compare($wp_version, '3.4-alpha', ">=")) {
-			$f->read_pofile($_POST['basepath'].$part.'admin-'.$root, $csp_l10n_plurals, $part.'admin-'.$root);
-			$f->read_pofile($_POST['basepath'].$part.'admin-network-'.$root, $csp_l10n_plurals, $part.'admin-network-'.$root);
-		}
+		$f->read_pofile($_POST['basepath'].$part.'admin-'.$root, $csp_l10n_plurals, $part.'admin-'.$root);
+		$f->read_pofile($_POST['basepath'].$part.'admin-network-'.$root, $csp_l10n_plurals, $part.'admin-network-'.$root);
 		//again read it to get the right header overwritten last
 		$f->read_pofile($_POST['basepath'].$_POST['file'], $csp_l10n_plurals, $_POST['file']);
 		//overwrite with full imploded sparse file contents now
