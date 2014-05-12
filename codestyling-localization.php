@@ -1,22 +1,22 @@
 <?php
 /*
 Plugin Name: CodeStyling Localization
-Plugin URI: http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en
+Plugin URI: https://github.com/OpenInformationTechnology/codestyling-localization-translation/
 Description: You can manage and edit all gettext translation files (*.po/*.mo) directly out of your WordPress Admin Center without any need of an external editor. It automatically detects the gettext ready components like <b>WordPress</b> itself or any <b>Plugin</b> / <b>Theme</b> supporting gettext, is able to scan the related source files and can assists you using <b>Google Translate API</b> or <b>Microsoft Translator API</b> during translation.This plugin supports <b>WordPress MU</b> and allows explicit <b>WPMU Plugin</b> translation too. It newly introduces ignore-case and regular expression search during translation. <b>BuddyPress</b> and <b>bbPress</b> as part of BuddyPress can be translated too. Produces transalation files are 100% compatible to <b>PoEdit</b>.
-Version: 1.99.30
-Author: Heiko Rabe
-Author URI: http://www.code-styling.de/english/
+Version: 2.00
+Author: Vladimir Bulanov
+Author URI: http://tvpactivism.net/en/
 Text Domain: codestyling-localization
 Domain Path: /languages
 
 
  License:
  ==============================================================================
- Copyright 2008 Heiko Rabe  (email : info@code-styling.de)
+ Copyright 2014 Vladimir Bulanov  (email : energy@energy.im)
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
+ the Free Software Foundation; either version 3 of the License, or
  (at your option) any later version.
  
  This program is distributed in the hope that it will be useful,
