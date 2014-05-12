@@ -5,6 +5,7 @@ $csp_l10n_langs = array(
 	'az' => array('az_AZ'),
 	'be' => array('be_BY'),
 	'bg' => array('bg_BG'),
+	'bn' => array('bn_BD'),
 	'bs' => array('bs_BA'),
 	'by' => array('by_BY'),
 	'ca' => array('ca_ES'),
@@ -74,6 +75,7 @@ $csp_l10n_login_label = array(
 	'az' => "Dil",
 	'be' => "МО́ВА",
 	'bg' => "Език",
+	'bn' => "ভাষা",
 	'bs' => "Язык",
 	'by' => "Язык",
 	'ca' => "Llenguatge",
@@ -144,8 +146,9 @@ $csp_l10n_plurals = array(
 	'az' => "nplurals=2; plural=n != 1;",
 	'be' => "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);",
 	'bg' => "nplurals=2; plural=n != 1;",
-	'bs' => "nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;",
-	'by' => "nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;",
+	'bn' => "nplurals=2; plural=n != 1;",
+	'bs' => "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);",
+	'by' => "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);",
 	'ca' => "nplurals=2; plural=n != 1;",
 	'cs' => "nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;",
 	'da' => "nplurals=2; plural=n != 1;",
@@ -190,7 +193,7 @@ $csp_l10n_plurals = array(
 	'pl' => "nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;",
 	'pt' => "nplurals=2; plural=n != 1;",
 	'ro' => "nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2); ",
-	'ru' => "nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;",
+	'ru' => "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);",
 	'sk' => "nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;",
 	'sl' => "nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;",
 	'sq' => "nplurals=2; plural=n != 1;", //may not be correct!
@@ -199,7 +202,7 @@ $csp_l10n_plurals = array(
 	'th' => "nplurals=1; plural=0;",
 	'tl' => "nplurals=2; plural=n != 1;",
 	'tr' => "nplurals=2; plural=(n>1);",
-	'uk' => "nplurals=3; plural=n%100/10==1 ? 2 : n%10==1 ? 0 : (n+9)%10>3 ? 2 : 1;",
+	'uk' => "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);",
 	'ug' => "nplurals=1; plural=0;",
 	'vi' => "nplurals=1; plural=0;",
 	'xh' => "nplurals=2; plural=n != 1;",
@@ -218,7 +221,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'afk',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'af',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_AE' => array (
 		'country' => "U.A.E.",
@@ -230,7 +235,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'aru',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_BH' => array (
 		'country' => "Bahrain",
@@ -242,7 +249,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arh',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_DZ' => array (
 		'country' => "Algeria",
@@ -254,7 +263,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arg',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_EG' => array (
 		'country' => "Egypt",
@@ -266,7 +277,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'are',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_IQ' => array (
 		'country' => "Iraq",
@@ -278,7 +291,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ari',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_JO' => array (
 		'country' => "Jordan",
@@ -290,7 +305,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arj',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_KW' => array (
 		'country' => "Kuwait",
@@ -302,7 +319,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ark',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_LB' => array (
 		'country' => "Lebanon",
@@ -314,7 +333,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arb',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_LY' => array (
 		'country' => "Libya",
@@ -326,7 +347,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arl',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_MA' => array (
 		'country' => "Morocco",
@@ -338,7 +361,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arm',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_OM' => array (
 		'country' => "Oman",
@@ -350,7 +375,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'aro',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_QA' => array (
 		'country' => "Qatar",
@@ -362,7 +389,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'arq',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_SA' => array (
 		'country' => "Saudi Arabia",
@@ -374,7 +403,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ara',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_SY' => array (
 		'country' => "Syria",
@@ -386,7 +417,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ars',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_TN' => array (
 		'country' => "Tunisia",
@@ -398,7 +431,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'art',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ar_YE' => array (
 		'country' => "Yemen",
@@ -410,7 +445,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ary',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'ar',
-		'microsoft-api' => 'ar'
+		'microsoft-api' => 'ar',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'az_AZ' => array (
 		'country' => "Azerbaijan",
@@ -422,7 +459,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'aze',
 		'ms-cp' => 'CP1254',
 		'google-api' => 'az',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'be_BY' => array (
 		'country' => "Belarus",
@@ -434,7 +473,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'bel',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'be',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'bg_BG' => array (
 		'country' => "Bulgaria",
@@ -446,7 +487,23 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'bgr',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'bg',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
+	),
+	'bn_BD' => array (
+		'country' => "Bangladesh",
+		'country-www' => 'bn',
+		'lang' => 'Bengali',
+		'lang-native' => 'বাংলা',
+		'lang-www' => 'bn-BD',
+		'dir' => 'ltr',
+		'ms-loc' => 'bgr',
+		'ms-cp' => 'CP1251',
+		'google-api' => 'bn',
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'bs_BA' => array (
 		'country' => "Bosnia and Herzegowina",
@@ -457,7 +514,10 @@ $csp_l10n_sys_locales = array(
 		'dir' => 'ltr',
 		'ms-loc' => 'bos',
 		'ms-cp' => 'CP1251',
-		'google-api' => false,
+		'google-api' => 'bs',
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'by_BY' => array (
 		'country' => "Belarus",
@@ -469,7 +529,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'bel',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'be',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ca_ES' => array (
 		'country' => "Spain",
@@ -481,7 +543,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'cat',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'ca',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'cs_CZ' => array (
 		'country' => "Czech Republic",
@@ -493,7 +557,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'csy',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'cs',
-		'microsoft-api' => 'cs'
+		'microsoft-api' => 'cs',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'da_DK' => array (
 		'country' => "Denmark",
@@ -505,7 +571,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'dan',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'da',
-		'microsoft-api' => 'da'
+		'microsoft-api' => 'da',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'de_AT' => array (
 		'country' => "Austria",
@@ -517,7 +585,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'dea',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'de',
-		'microsoft-api' => 'de'
+		'microsoft-api' => 'de',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'de_CH' => array (
 		'country' => "Switzerland",
@@ -529,7 +599,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'des',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'de',
-		'microsoft-api' => 'de'
+		'microsoft-api' => 'de',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'de_DE' => array (
 		'country' => "Germany",
@@ -541,7 +613,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'deu',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'de',
-		'microsoft-api' => 'de'
+		'microsoft-api' => 'de',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'de_LU' => array (
 		'country' => "Luxembourg",
@@ -553,7 +627,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'del',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'de',
-		'microsoft-api' => 'de'
+		'microsoft-api' => 'de',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'el_CY' => array (
 		'country' => "Greece",
@@ -565,7 +641,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ell',
 		'ms-cp' => 'CP1253',
 		'google-api' => 'el',
-		'microsoft-api' => 'el'
+		'microsoft-api' => 'el',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'el_GR' => array (
 		'country' => "Greece",
@@ -577,7 +655,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ell',
 		'ms-cp' => 'CP1253',
 		'google-api' => 'el',
-		'microsoft-api' => 'el'
+		'microsoft-api' => 'el',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'el_EL' => array (
 		'country' => "Greece",
@@ -589,7 +669,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ell',
 		'ms-cp' => 'CP1253',
 		'google-api' => 'el',
-		'microsoft-api' => 'el'
+		'microsoft-api' => 'el',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_AU' => array (
 		'country' => "Australia",
@@ -601,7 +683,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ena',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_CA' => array (
 		'country' => "Canada",
@@ -613,7 +697,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'enc',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_GB' => array (
 		'country' => "United Kingdom",
@@ -625,7 +711,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'eng',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_IE' => array (
 		'country' => "Ireland",
@@ -637,7 +725,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'eni',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_NZ' => array (
 		'country' => "New Zealand",
@@ -649,7 +739,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'enz',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_PH' => array (
 		'country' => "Republic of the Philippines",
@@ -661,7 +753,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'enp',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_US' => array (
 		'country' => "United States",
@@ -673,7 +767,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'enu',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'en_ZA' => array (
 		'country' => "South Africa",
@@ -685,7 +781,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ens',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'en',
-		'microsoft-api' => 'en'
+		'microsoft-api' => 'en',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'eo_EO' => array (
 		'country' => "-n.a.-",
@@ -697,7 +795,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'enu',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'eo',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),	
 	'es_AR' => array (
 		'country' => "Argentina",
@@ -709,7 +809,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ess',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_BO' => array (
 		'country' => "Bolivia",
@@ -721,7 +823,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esb',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_CL' => array (
 		'country' => "Chile",
@@ -733,7 +837,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esl',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_CO' => array (
 		'country' => "Colombia",
@@ -745,7 +851,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'eso',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_CR' => array (
 		'country' => "Costa Rica",
@@ -757,7 +865,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esc',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_DO' => array (
 		'country' => "Dominican Republic",
@@ -769,7 +879,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esd',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_EC' => array (
 		'country' => "Ecuador",
@@ -781,7 +893,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esf',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_ES' => array (
 		'country' => "Spain",
@@ -793,7 +907,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esp',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_GT' => array (
 		'country' => "Guatemala",
@@ -805,7 +921,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esg',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_HN' => array (
 		'country' => "Honduras",
@@ -817,7 +935,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esh',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_MX' => array (
 		'country' => "Mexico",
@@ -829,7 +949,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esm',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_NI' => array (
 		'country' => "Nicaragua",
@@ -841,7 +963,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esi',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_PA' => array (
 		'country' => "Panama",
@@ -853,7 +977,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esa',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_PE' => array (
 		'country' => "Peru",
@@ -865,7 +991,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esr',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_PR' => array (
 		'country' => "Puerto Rico",
@@ -877,7 +1005,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esu',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_PY' => array (
 		'country' => "Paraguay",
@@ -889,7 +1019,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esz',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_SV' => array (
 		'country' => "El Salvador",
@@ -901,7 +1033,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ese',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_UY' => array (
 		'country' => "Uruguay",
@@ -913,7 +1047,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esy',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'es_VE' => array (
 		'country' => "Venezuela",
@@ -925,7 +1061,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'esv',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'es',
-		'microsoft-api' => 'es'
+		'microsoft-api' => 'es',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'et_EE' => array (
 		'country' => "Estonia",
@@ -937,7 +1075,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'eti',
 		'ms-cp' => 'CP1257',
 		'google-api' => 'et',
-		'microsoft-api' => 'et'
+		'microsoft-api' => 'et',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'eu_ES' => array (
 		'country' => "Basque",
@@ -949,7 +1089,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'eh',
 		'ms-cp' => 'CP1257',
 		'google-api' => 'eu',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fa_IR' => array (
 		'country' => "Iran",
@@ -961,7 +1103,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'far',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fa',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fi_FI' => array (
 		'country' => "Finland",
@@ -973,7 +1117,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'fin',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fi',
-		'microsoft-api' => 'fi'
+		'microsoft-api' => 'fi',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fo_FO' => array (
 		'country' => "Faroe Islands",
@@ -985,7 +1131,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'fos',
 		'ms-cp' => 'CP1252',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fr_BE' => array (
 		'country' => "Belgium",
@@ -997,7 +1145,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'frb',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fr',
-		'microsoft-api' => 'fr'
+		'microsoft-api' => 'fr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fr_CA' => array (
 		'country' => "Canada",
@@ -1009,7 +1159,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'frc',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fr',
-		'microsoft-api' => 'fr'
+		'microsoft-api' => 'fr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fr_CH' => array (
 		'country' => "Switzerland",
@@ -1021,7 +1173,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'frs',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fr',
-		'microsoft-api' => 'fr'
+		'microsoft-api' => 'fr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fr_FR' => array (
 		'country' => "France",
@@ -1033,7 +1187,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'fra',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fr',
-		'microsoft-api' => 'fr'
+		'microsoft-api' => 'fr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fr_LU' => array (
 		'country' => "Luxembourg",
@@ -1045,7 +1201,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'frl',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'fr',
-		'microsoft-api' => 'fr'
+		'microsoft-api' => 'fr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'fy_NL' => array (
 		'country' => "Netherlands",
@@ -1057,7 +1215,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'fyn',
 		'ms-cp' => 'CP1252',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ga_IE' => array (
 		'country' => "Ireland",
@@ -1069,7 +1229,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ire',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'ga',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'gl_ES' => array(
 		'country' => "Espana",
@@ -1081,7 +1243,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'gel',
 		'ms-cp' => 'CP1255',
 		'google-api' => 'gl',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'he_IL' => array (
 		'country' => "Israel",
@@ -1093,7 +1257,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'heb',
 		'ms-cp' => 'CP1255',
 		'google-api' => 'he',
-		'microsoft-api' => 'he'
+		'microsoft-api' => 'he',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'hi_IN' => array (
 		'country' => "India",
@@ -1105,7 +1271,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'hin',
 		'ms-cp' => 'CP1255',
 		'google-api' => 'hi',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'hr_HR' => array (
 		'country' => "Croatia",
@@ -1117,7 +1285,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'hrv',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'hr',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'hu_HU' => array (
 		'country' => "Hungary",
@@ -1129,7 +1299,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'hun',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'hu',
-		'microsoft-api' => 'hu'
+		'microsoft-api' => 'hu',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'hy_AM' => array (
 		'country' => "Armenia",
@@ -1141,7 +1313,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'hy',
 		'ms-cp' => 'CP1256',
 		'google-api' => 'hy',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'id_ID' => array (
 		'country' => "Indonesia",
@@ -1153,7 +1327,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ind',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'id',
-		'microsoft-api' => 'id'
+		'microsoft-api' => 'id',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'in_ID' => array (
 		'country' => "Indonesia",
@@ -1165,7 +1341,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ind',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'id',
-		'microsoft-api' => 'id'
+		'microsoft-api' => 'id',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'is_IS' => array (
 		'country' => "Iceland",
@@ -1177,7 +1355,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'isl',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'is',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'it_CH' => array (
 		'country' => "Switzerland",
@@ -1189,7 +1369,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'its',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'it',
-		'microsoft-api' => 'it'
+		'microsoft-api' => 'it',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'it_IT' => array (
 		'country' => "Italy",
@@ -1201,7 +1383,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ita',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'it',
-		'microsoft-api' => 'it'
+		'microsoft-api' => 'it',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ja_JP' => array (
 		'country' => "Japan",
@@ -1213,7 +1397,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'jpn',
 		'ms-cp' => 'CP932',
 		'google-api' => 'ja',
-		'microsoft-api' => 'ja'
+		'microsoft-api' => 'ja',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ka_GE' => array(
 		'country' => "Kazakhstan",
@@ -1225,7 +1411,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'geo',
 		'ms-cp' => '',
 		'google-api' => 'ka',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'kk_KK' => array (
 		'country' => "Kazakhstan",
@@ -1237,7 +1425,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'kkz',
 		'ms-cp' => 'CP1251',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ko_KR' => array (
 		'country' => "Korea",
@@ -1249,7 +1439,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'kor',
 		'ms-cp' => 'CP949',
 		'google-api' => 'ko',
-		'microsoft-api' => 'ko'
+		'microsoft-api' => 'ko',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ky_KY' => array (
 		'country' => "Kyrgyzstan",
@@ -1261,7 +1453,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'kyr',
 		'ms-cp' => 'CP1251',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'lb_LB' => array (
 		'country' => "Luxembourg",
@@ -1273,7 +1467,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'lbx',
 		'ms-cp' => 'CP1252',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'lt_LT' => array (
 		'country' => "Lithuania",
@@ -1285,7 +1481,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'lth',
 		'ms-cp' => 'CP1257',
 		'google-api' => 'lt',
-		'microsoft-api' => 'lt'
+		'microsoft-api' => 'lt',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'lv_LV' => array (
 		'country' => "Latvia",
@@ -1297,7 +1495,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'lvi',
 		'ms-cp' => 'CP1257',
 		'google-api' => 'lv',
-		'microsoft-api' => 'lv'
+		'microsoft-api' => 'lv',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'mk_MK' => array (
 		'country' => "Former Yugoslav Republic of Macedonia",
@@ -1309,7 +1509,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'mki',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'mk',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'mn_MN' => array (
 		'country' => "Mongolia",
@@ -1321,7 +1523,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'mon',
 		'ms-cp' => 'CP1251',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'my_MM' => array (
 		'country' => "Myanmar",
@@ -1333,7 +1537,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'bur',
 		'ms-cp' => 'CP1251',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'nb_NB' => array (
 		'country' => "Norway",
@@ -1345,7 +1551,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'nor',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'no',
-		'microsoft-api' => 'no'
+		'microsoft-api' => 'no',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'nb_NO' => array (
 		'country' => "Norway",
@@ -1357,7 +1565,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'nor',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'no',
-		'microsoft-api' => 'no'
+		'microsoft-api' => 'no',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'nl_BE' => array (
 		'country' => "Belgium",
@@ -1369,7 +1579,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'nlb',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'nl',
-		'microsoft-api' => 'nl'
+		'microsoft-api' => 'nl',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'nl_NL' => array (
 		'country' => "Netherlands",
@@ -1381,7 +1593,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'nld',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'nl',
-		'microsoft-api' => 'nl'
+		'microsoft-api' => 'nl',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'nn_NO' => array (
 		'country' => "Norway",
@@ -1393,7 +1607,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'non',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'no',
-		'microsoft-api' => 'no'
+		'microsoft-api' => 'no',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'no_NO' => array (
 		'country' => "Norway",
@@ -1405,7 +1621,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'non',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'no',
-		'microsoft-api' => 'no'
+		'microsoft-api' => 'no',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'pl_PL' => array (
 		'country' => "Poland",
@@ -1417,7 +1635,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'plk',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'pl',
-		'microsoft-api' => 'pl'
+		'microsoft-api' => 'pl',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'pt_BR' => array (
 		'country' => "Brazil",
@@ -1429,7 +1649,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ptb',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'pt',
-		'microsoft-api' => 'pt'
+		'microsoft-api' => 'pt',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'pt_PT' => array (
 		'country' => "Portugal",
@@ -1441,7 +1663,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ptg',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'pt',
-		'microsoft-api' => 'pt'
+		'microsoft-api' => 'pt',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ro_RO' => array (
 		'country' => "Romania",
@@ -1453,7 +1677,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'rom',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'ro',
-		'microsoft-api' => 'ro'
+		'microsoft-api' => 'ro',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ru_RU' => array (
 		'country' => "Russia",
@@ -1465,7 +1691,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'rus',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'ru',
-		'microsoft-api' => 'ru'
+		'microsoft-api' => 'ru',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sk_SK' => array (
 		'country' => "Slovakia",
@@ -1477,7 +1705,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'sky',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'sk',
-		'microsoft-api' => 'sk'
+		'microsoft-api' => 'sk',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sl_SI' => array (
 		'country' => "Slovenia",
@@ -1489,19 +1719,23 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'slv',
 		'ms-cp' => 'CP1250',
 		'google-api' => 'sl',
-		'microsoft-api' => 'sl'
+		'microsoft-api' => 'sl',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sq_AL' => array (
-	   'country' => "Albania",
-	   'country-www' => 'al',
-	   'lang' => 'Albanian',
-	   'lang-native' => 'Shqip',
-	   'lang-www' => 'sq-AL',
-	   'dir' => 'ltr',
-	   'ms-loc' => 'sqi',
-	   'ms-cp' => 'CP1250',
+		'country' => "Albania",
+		'country-www' => 'al',
+		'lang' => 'Albanian',
+		'lang-native' => 'Shqip',
+		'lang-www' => 'sq-AL',
+		'dir' => 'ltr',
+		'ms-loc' => 'sqi',
+		'ms-cp' => 'CP1250',
 		'google-api' => 'sq',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
     ),
 	'sr_BA' => array (
 		'country' => "Bosnia and Herzegovina",
@@ -1513,7 +1747,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'srn',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'sr',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sr_CS' => array (
 		'country' => "Serbia and Montenegro",
@@ -1525,7 +1761,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'srb',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'sr',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sr_RS' => array (
 		'country' => "Serbia",
@@ -1537,7 +1775,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'srb',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'sr',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'sv_SE' => array (
 		'country' => "Sweden",
@@ -1549,7 +1789,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'sve',
 		'ms-cp' => 'CP1252',
 		'google-api' => 'sv',
-		'microsoft-api' => 'sv'
+		'microsoft-api' => 'sv',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'th_TH' => array (
 		'country' => "Thailand",
@@ -1561,7 +1803,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'tha',
 		'ms-cp' => 'CP874',
 		'google-api' => 'th',
-		'microsoft-api' => 'th'
+		'microsoft-api' => 'th',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'tl_PH' => array (
 		'country' => "Philippines",
@@ -1573,7 +1817,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => '',
 		'ms-cp' => '',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'tr_TR' => array (
 		'country' => "Turkey",
@@ -1585,7 +1831,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'trk',
 		'ms-cp' => 'CP1254',
 		'google-api' => 'tr',
-		'microsoft-api' => 'tr'
+		'microsoft-api' => 'tr',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'ug_CN' => array (
 		'country' => "People's Republic of China",
@@ -1597,7 +1845,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ug',
 		'ms-cp' => 'CP1251',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'uk_UA' => array (
 		'country' => "Ukraine",
@@ -1609,7 +1859,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'ukr',
 		'ms-cp' => 'CP1251',
 		'google-api' => 'uk',
-		'microsoft-api' => 'uk'
+		'microsoft-api' => 'uk',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'vi_VN' => array (
 		'country' => "Viet Nam",
@@ -1621,7 +1873,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'vit',
 		'ms-cp' => 'CP1258',
 		'google-api' => 'vi',
-		'microsoft-api' => 'vi'
+		'microsoft-api' => 'vi',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'xh_XH' => array (
 		'country' => "South Africa",
@@ -1633,7 +1887,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'xho',
 		'ms-cp' => 'CP1252',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zh_CN' => array (
 		'country' => "People's Republic of China",
@@ -1645,7 +1901,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'chs',
 		'ms-cp' => 'CP936',
 		'google-api' => 'zh-CN',
-		'microsoft-api' => 'zh-CHS'
+		'microsoft-api' => 'zh-CHS',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zh-MO' => array (
 		'country' => "Macau S.A.R.",
@@ -1657,7 +1915,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'zhm',
 		'ms-cp' => 'CP950',
 		'google-api' => 'zh',
-		'microsoft-api' => 'zh'
+		'microsoft-api' => 'zh',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zh_HK' => array (
 		'country' => "Hong Kong S.A.R.",
@@ -1669,7 +1929,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'zhh',
 		'ms-cp' => 'CP950',
 		'google-api' => 'zh',
-		'microsoft-api' => 'zh'
+		'microsoft-api' => 'zh',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zh_SG' => array (
 		'country' => "Singapore",
@@ -1681,7 +1943,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'zhi',
 		'ms-cp' => 'CP936',
 		'google-api' => 'zh',
-		'microsoft-api' => 'zh'
+		'microsoft-api' => 'zh',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zh_TW' => array (
 		'country' => "Taiwan",
@@ -1693,7 +1957,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'cht',
 		'ms-cp' => 'CP950',
 		'google-api' => 'zh-TW',
-		'microsoft-api' => 'zh-CHT'
+		'microsoft-api' => 'zh-CHT',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 	'zu_ZU' => array (
 		'country' => "South Africa",
@@ -1705,7 +1971,9 @@ $csp_l10n_sys_locales = array(
 		'ms-loc' => 'zul',
 		'ms-cp' => 'CP1252',
 		'google-api' => '',
-		'microsoft-api' => ''
+		'microsoft-api' => '',
+		'yandex-api' => '',
+		'apertium-api' => ''
 	),
 );
 ?>
