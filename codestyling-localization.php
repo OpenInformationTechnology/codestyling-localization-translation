@@ -11,7 +11,7 @@ Domain Path: /languages
 
 
  License:
- ==============================================================================
+ ========================================================csp_po_get_wordpress_capabilities======================
  Copyright 2014 Vladimir Bulanov  (email : energy@energy.im)
 
  This program is free software; you can redistribute it and/or modify
@@ -378,7 +378,12 @@ function csp_find_translation_template(&$files) {
 	return $result;
 }
 
-function csp_po_get_wordpress_capabilities() {
+function csp_po_get_wordpress_capabilities($ext = "") {
+	if (empty($ext)) {
+		$ext = array('', '', '', '');
+	} else {
+		$ext = array($ext, $ext.'-', '-'.$ext, ' '.ucwords(strtr($ext, '-', ' ')));
+	}
 	$data = array();
 	$data['dev-hints'] = null;
 	$data['deny_scanning'] = false;
@@ -387,7 +392,7 @@ function csp_po_get_wordpress_capabilities() {
 	$data['img_type'] = 'wordpress';
 	if (csp_is_multisite()) $data['img_type'] .= "_mu";
 	$data['type-desc'] = __('WordPress',CSP_PO_TEXTDOMAIN);
-	$data['name'] = "WordPress";
+	$data['name'] = "WordPress".$ext[3];
 	$data['author'] = "<a href=\"http://codex.wordpress.org/WordPress_in_Your_Language\">WordPress.org</a>";
 	$data['version'] = $GLOBALS['wp_version'];
 	if (csp_is_multisite()) $data['version'] .= " | ".(isset($GLOBALS['wpmu_version']) ? $GLOBALS['wpmu_version'] : $GLOBALS['wp_version']);
@@ -398,7 +403,7 @@ function csp_po_get_wordpress_capabilities() {
 	$data['filename'] = str_replace(str_replace("\\","/",ABSPATH), '', str_replace("\\","/",WP_LANG_DIR));
 	$data['is-simple'] = false;
 	$data['simple-filename'] = '';
-	$data['textdomain'] = array('identifier' => 'default', 'is_const' => false );
+	$data['textdomain'] = array('identifier' => 'default'.$ext[2], 'is_const' => false );
 	$data['languages'] = array();
 	$data['is-path-unclear'] = false;
 	$data['gettext_ready'] = true;
@@ -410,7 +415,7 @@ function csp_po_get_wordpress_capabilities() {
 		$data['translation_template'] = csp_find_translation_template($files);
 		foreach($files as $filename) {
 			$file = str_replace(str_replace("\\","/",WP_LANG_DIR).'/', '', $filename);
-			preg_match("/^([a-z][a-z]_[A-Z][A-Z]).(mo|po)$/", $file, $hits);
+			preg_match("/^{$ext[1]}([a-z][a-z]_[A-Z][A-Z]).(mo|po)$/", $file, $hits);
 			if (empty($hits[1]) === false) {
 				$data['languages'][$hits[1]][$hits[2]] = array(
 					'class' => "-".(is_readable($filename) ? 'r' : '').(is_writable($filename) ? 'w' : ''),
@@ -420,7 +425,8 @@ function csp_po_get_wordpress_capabilities() {
 			}
 		}
 
-		$data['base_file'] = (empty($data['special_path']) ? '' : $data['special_path'].'/') . $data['filename'].'/';
+		$data['base_file'] = (empty($data['special_path']) ? '' : $data['special_path'].'/') . $data['filename'].'/'.$ext[1];
+		$data['filename'] = $ext[0];
 	}
 	return $data;
 }
@@ -1015,7 +1021,9 @@ function csp_po_collect_by_type($type){
 	if ($do_compat_filter || $do_security_filter) $type = '';
 	if (empty($type) || ($type == 'wordpress')) {
 		if (!$do_compat_filter && !$do_security_filter)
-			$res[] = csp_po_get_wordpress_capabilities();
+			foreach (array('', 'ms', 'continents-cities', 'admin', 'admin-network') as $ext) {
+				$res[] = csp_po_get_wordpress_capabilities($ext);
+			}
 	}
 	if (empty($type) || ($type == 'plugins')) {
 		//WARNING: Plugin handling is not well coded by WordPress core
@@ -1966,16 +1974,18 @@ function csp_po_ajax_handle_generate_mo_file(){
 	//dirname|basename|extension
 	if (preg_match("|^".$wp_dir."|", $mo)) {
 		//we are WordPress itself
-		if ($textdomain != 'default') {
+		if (empty($textdomain) || (strpos($textdomain, 'default') === 0)) {
+			$mo	= $parts['dirname'].'/'.$parts['basename'];
+		} else {
 			$mo	= $parts['dirname'].'/'.$textdomain.'-'.$parts['basename'];
 		}
-	}elseif(preg_match("|^".$pl_dir."|", $mo)|| preg_match("|^".$plm_dir."|", $mo)) {
+	}elseif(preg_match("|^".$pl_dir."|", $mo) || preg_match("|^".$plm_dir."|", $mo)) {
 		//we are a normal or wpmu plugin
 		if ((strpos($parts['basename'], $textdomain) === false) && ($textdomain != 'default')) {
 			preg_match("/([a-z][a-z]_[A-Z][A-Z]\.mo)$/", $parts['basename'], $h);
 			if (!empty($textdomain)) {
 				$mo	= $parts['dirname'].'/'.$textdomain.'-'.$h[1];
-			}else {
+			} else {
 				$mo	= $parts['dirname'].'/'.$h[1];
 			}
 		}
